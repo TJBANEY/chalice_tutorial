@@ -1,11 +1,11 @@
 {
   "dev": {
     "api_handler_name": "chalice-helloworld-dev",
-    "api_handler_arn": "arn:aws:lambda:us-east-2:376424775662:function:chalice-helloworld-dev",
+    "api_handler_arn": "",
     "lambda_functions": {},
     "backend": "api",
     "chalice_version": "1.1.1",
-    "rest_api_id": "dqm3ujwi58",
+    "rest_api_id": "",
     "api_gateway_stage": "api",
     "region": "us-east-2"
   }

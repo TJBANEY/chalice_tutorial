@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "app_name": "chalice-helloworld",
+  "app_name": "helloworlddd",
   "stages": {
     "dev": {
       "api_gateway_stage": "api"

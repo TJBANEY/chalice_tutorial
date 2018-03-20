@@ -45,3 +45,11 @@ def index():
     return Response(body=battleship_template,
                     status_code=200,
                     headers={'Content-Type': 'text/html'})
+
+@app.route('/choose_ship')
+def choose_ship():
+    x = 5
+    return Response(body={'value': x},
+                    status_code=200,
+                    headers={'Content-Type': 'application/json',
+                             'Access-Control-Allow-Origin': '*'})

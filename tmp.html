@@ -10,12 +10,28 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
-<style media="screen">
-@media (min-width: 1200px){
-  .container {
-    width: 1000px;
+<script type="text/javascript">
+  var choose_ship = function(gridSpot) {
+    console.log(gridSpot);
+
+    // $.ajax({
+    //   method: 'GET',
+    //   url: 'https://c4kv9wm2ib.execute-api.us-east-2.amazonaws.com/api/choose_ship'
+    // }).then(function success(response) {
+    //   console.log('SUCCESS');
+    //   console.log(response)
+    // }, function error(response) {
+    //   console.log('Something Went Wrong');
+    // })
   }
-}
+</script>
+
+<style media="screen">
+  @media (min-width: 1200px) {
+    .container {
+      width: 1000px;
+    }
+  }
 </style>
 
 <body>
@@ -30,142 +46,142 @@
         <div class="row">
           <div class="col-xs-12" style="height: 90px; border: 1px solid black;">
             <div class="row" style="height: 100%;">
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('A1')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('A2')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('A3')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('A4')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('A5')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('A6')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('A7')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('A8')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('A9')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('A10')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
             </div>
           </div>
           <div class="col-xs-12" style="height: 90px; border: 1px solid black;">
             <div class="row" style="height: 100%;">
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('B1')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('B2')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('B3')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('B4')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('B5')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('B6')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('B7')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('B8')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('B9')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('B10')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
             </div>
           </div>
           <div class="col-xs-12" style="height: 90px; border: 1px solid black;">
             <div class="row" style="height: 100%;">
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('C1')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('C2')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('C3')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('C4')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('C5')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('C6')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('C7')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('C8')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('C9')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('C10')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
             </div>
           </div>
           <div class="col-xs-12" style="height: 90px; border: 1px solid black;">
             <div class="row" style="height: 100%;">
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('D1')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('D2')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('D3')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('D4')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('D5')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('D6')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('D7')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('D8')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('D9')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('D10')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
             </div>
           </div>
           <div class="col-xs-12" style="height: 90px; border: 1px solid black;">
             <div class="row" style="height: 100%;">
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('E1')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('E2')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('E3')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('E4')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('E5')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('E6')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('E7')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('E8')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('E9')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('E10')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
             </div>
           </div>
           <div class="col-xs-12" style="height: 90px; border: 1px solid black;">
             <div class="row" style="height: 100%;">
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('F1')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('F2')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('F3')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('F4')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('F5')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('F6')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('F7')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('F8')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('F9')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('F10')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
             </div>
           </div>
           <div class="col-xs-12" style="height: 90px; border: 1px solid black;">
             <div class="row" style="height: 100%;">
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('G1')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('G2')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('G3')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('G4')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('G5')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('G6')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('G7')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('G8')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('G9')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('G10')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
             </div>
           </div>
           <div class="col-xs-12" style="height: 90px; border: 1px solid black;">
             <div class="row" style="height: 100%;">
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('H1')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('H2')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('H3')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('H4')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('H5')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('H6')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('H7')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('H8')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('H9')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('H10')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
             </div>
           </div>
           <div class="col-xs-12" style="height: 90px; border: 1px solid black;">
             <div class="row" style="height: 100%;">
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('I1')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('I2')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('I3')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('I4')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('I5')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('I6')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('I7')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('I8')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('I9')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('I10')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
             </div>
           </div>
           <div class="col-xs-12" style="height: 90px; border: 1px solid black;">
             <div class="row" style="height: 100%;">
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
-              <div class="bship-col col-xs-1" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('J1')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('J2')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('J3')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('J4')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('J5')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('J6')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('J7')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('J8')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('J9')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
+              <div class="bship-col col-xs-1" onclick="choose_ship('J10')" style="cursor: pointer; border-right: 1px solid black; border-left: 1px solid black; width: 10%; height: 100%;"></div>
             </div>
           </div>
         </div>

@@ -2,6 +2,11 @@ from chalice import Chalice, BadRequestError, Response
 import jinja2
 import os
 
+import boto3
+
+from pymongo import MongoClient
+from pprint import pprint
+
 from os import listdir
 from os.path import isfile, join
 
@@ -48,8 +53,17 @@ def index():
 
 @app.route('/choose_ship')
 def choose_ship():
-    x = 5
-    return Response(body={'value': x},
+    # connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
+    client = pymongo.MongoClient("mongodb+srv://kay:myRealPassword@cluster0.mongodb.net/test")
+    db = client.test
+
+    # Issue the serverStatus command and print the results
+    try:
+        serverStatusResult = db.command("serverStatus")
+    except Exception as e:
+        serverStatusResult = e
+
+    return Response(body={'value': serverStatusResult},
                     status_code=200,
                     headers={'Content-Type': 'application/json',
                              'Access-Control-Allow-Origin': '*'})

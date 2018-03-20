@@ -5,7 +5,6 @@ import os
 import boto3
 
 from pymongo import MongoClient
-from pprint import pprint
 
 from os import listdir
 from os.path import isfile, join
@@ -54,7 +53,7 @@ def index():
 @app.route('/choose_ship')
 def choose_ship():
     # connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
-    client = pymongo.MongoClient("mongodb+srv://kay:myRealPassword@cluster0.mongodb.net/test")
+    client = MongoClient("mongodb+srv://kay:myRealPassword@cluster0.mongodb.net/test")
     db = client.test
 
     # Issue the serverStatus command and print the results
